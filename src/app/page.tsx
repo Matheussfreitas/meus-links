@@ -1,25 +1,26 @@
 import { Box, Typography } from "@mui/material";
-import { Roboto } from "next/font/google"
 import SessionOne from "./components/session-1";
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400'],
-})
+import SessionTwo from "./components/session-2";
+import SessionThree from "./components/session-3";
 
 export default function Home() {
   return (
     <Box sx={{
-      maxWidth: 400,
+      maxWidth: "450px",
       margin: 'auto',
-      border: '1px solid #fff',
+      marginTop: "30px",
+      backgroundColor: "var(--cinza-claro)",
+      borderRadius: '16px',
       display: "flex",
       justifyContent: 'center',
       alignItems: 'center',
       flexDirection: "column",
+      gap: "10px",
+      paddingY: '10px',
     }}>
-      <Typography variant="h6">Meus Links</Typography>
       <SessionOne />
+      <SessionTwo />
+      <SessionThree />
     </Box>
   );
 }
