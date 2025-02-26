@@ -21,7 +21,7 @@ export default function SessionTwo() {
       borderRadius: "8px",
       }}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: "10px"}}>
-        <Typography sx={{ fontSize: "1rem", fontWeight: "bold", textAlign: "center", color: "var(--texto)"}}>
+        <Typography sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "center", color: "var(--texto)"}}>
           Tecnologias
         </Typography>
         <Box sx={{ 
