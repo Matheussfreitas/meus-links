@@ -1,4 +1,4 @@
-import { Box, Icon, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -15,7 +15,7 @@ export default function SessionThree() {
   ]
   return(
     <Box>
-      <Typography variant="h6" sx={{ fontWeight: "bold", textAlign: "center", color: 'var(--texto)' }}>
+      <Typography sx={{ fontSize: "1rem", fontWeight: "bold", textAlign: "center", color: 'var(--texto)' }}>
         Vamos conectar!
       </Typography>
       <Box sx={{ 
@@ -40,7 +40,7 @@ export default function SessionThree() {
               border: "solid #1A365D",
               borderRadius: "1rem",  
               "& svg": { fontSize: "35px", color: "var(--contorno)" },
-              "&:hover": { backgroundColor: "var(--contorno)", border: "solid var(--background)", "& svg": {color: "#fff"}, transition: "0.3s" } 
+              "&:hover": { backgroundColor: "var(--contorno)", border: "solid var(--background)", "& svg": {color: "#fff", transition: "0.5s"}, transition: "0.5s" } 
               }}>
                 {item.icon}
             </Box>

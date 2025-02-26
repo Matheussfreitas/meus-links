@@ -11,7 +11,7 @@ export default function SessionFour() {
 
   return (
     <Box sx={{ textAlign: "center", maxWidth: "350px", width: "100%" }}>
-      <Typography variant="h6" sx={{ marginBottom: "10px", fontWeight: "bold", color: 'var(--texto)' }}>
+      <Typography sx={{ marginBottom: "10px", fontSize: "1rem", fontWeight: "bold", color: 'var(--texto)' }}>
         Estou escutando...
       </Typography>
 
