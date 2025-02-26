@@ -15,22 +15,26 @@ export default function SessionTwo() {
   return(
     <Box sx={{  
       width: "100%",
-      maxWidth: "380px",
-      padding: "10px",
+      maxWidth: "300px",
       borderRadius: "8px",
       }}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: "10px"}}>
-        <Typography variant="h6" sx={{ fontWeight: "bold", textAlign: "center" }}>
-          Minhas Tecnologias
+        <Typography variant="h6" sx={{ fontWeight: "bold", textAlign: "center", color: "var(--texto)"}}>
+          Minha Stack
         </Typography>
         <Box sx={{ 
+          marginTop: "10px",
           display: "flex", 
           flexDirection: "row",  
-          justifyContent: "space-between" 
+          justifyContent: "space-around" 
           }}>
           {icons.map( icon => (
-            <Box key={icon.stack} sx={{}}>
-              <Image src={icon.icon} alt={icon.stack} width={25} height={25} style={{ cursor: "pointer" }} />
+            <Box key={icon.stack} sx={{ 
+              maxWidth: "300px", 
+              filter: "grayscale(80%)", 
+              "&:hover": { filter: "none", transition: "0.3s" } }}>
+              <Image src={icon.icon} alt={icon.stack} width={25} height={25} 
+              style={{ cursor: "pointer" }} />
             </Box>
           ))}
         </Box>

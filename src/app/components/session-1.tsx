@@ -20,10 +20,10 @@ export default function SessionOne() {
         alignItems: "center",
         gap: "10px",
       }}>
-        <Box sx={{ border: "solid var(--azul-oceano)", borderRadius: "50%" }}>
+        <Box sx={{ border: "solid var(--contorno)", borderRadius: "50%" }}>
           <Avatar variant="circular" 
           sx={{ 
-            backgroundColor: "var(--laranja-suave)",
+            backgroundColor: "var(--background)",
             width: "80px",
             height: "80px",
             }}
@@ -34,9 +34,10 @@ export default function SessionOne() {
         <Box sx={{
           display: "flex",
           flexDirection: "column",
+          textAlign: "center",
         }}>
-          <Typography>Desenvolvedor Web</Typography>
-          <Typography>Apaixonado por Surf</Typography>
+          <Typography sx={{ fontWeight: "600", fontSize: "1.1rem", color: 'var(--texto)', textShadow: "0px 1px 1px rgba(0,0,0,0.2)" }}>Desenvolvedor Web</Typography>
+          <Typography sx={{ fontWeight: "600", fontSize: "1rem", color: 'var(--texto)' }}>Respirando código e marésia</Typography>
         </Box>
       </Box>
     </Box>

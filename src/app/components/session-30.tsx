@@ -6,7 +6,7 @@ import GoogleIcon from '@mui/icons-material/Google';
 
 import Link from "next/link";
 
-export default function SessionThree() {
+export default function SessionThreeOne() {
   const socials = [
     { name: "instagram", url: "https://www.instagram.com/matheus.freitax?igsh=cXdjcXNyZ25wMmk1&utm_source=qr", icon: <InstagramIcon /> },
     { name: "linkedin", url: "http://linkedin.com/in/mgsoutodelira", icon: <LinkedInIcon /> },
@@ -15,32 +15,31 @@ export default function SessionThree() {
   ]
   return(
     <Box>
-      <Typography variant="h6" sx={{ fontWeight: "bold", textAlign: "center", color: 'var(--texto)' }}>
-        Vamos conectar!
+      <Typography variant="h6" sx={{ fontWeight: "bold", textAlign: "center" }}>
+        Onde me encontrar
       </Typography>
       <Box sx={{ 
         display: "flex",
-        flexWrap: "row",
+        flexWrap: "wrap",
         justifyContent: "center",
-        gap: "0.5rem",
+        gap: "10px",
         maxWidth: "300px",
-        marginTop: "10px",
+        marginTop: "20px",
         marginX: "auto",
         }}>
           {socials.map(item => (
           <Link key={item.name} href={item.url} target="_blank">
             <Box sx={{ 
-              width: "30px",
-              height: "25px",
+              width: "80px",
+              height: "40px",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               cursor: "pointer", 
-              padding: "1rem", 
-              border: "solid #1A365D",
-              borderRadius: "1rem",  
-              "& svg": { fontSize: "35px", color: "var(--contorno)" },
-              "&:hover": { backgroundColor: "var(--contorno)", border: "solid var(--background)", "& svg": {color: "#fff"}, transition: "0.3s" } 
+              padding: "20px", 
+              border: "solid",
+              borderRadius: "10px", 
+              "& svg": { fontSize: "45px" }, 
               }}>
                 {item.icon}
             </Box>

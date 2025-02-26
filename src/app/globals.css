@@ -1,33 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 :root {
-  --background: #ffffff;
   --foreground: #171717;
-  --verde-menta: #A8C69F;
   --cinza-claro: #D0DDD0;
   --azul-oceano: #5E98A6;
   --cinza-azulado: #264653;
-  --areia-queimada: #D9B382;
-  --areia-areia: #BFA98E;
-  --bege-dourado: #E9C46A;
   --laranja-suave: #F2762E;
   --laranja-sol: #E27A3F;
   --laranja-queimado: #E76F51;
-  --laranja-forte: #F97300;
+  --texto: #2D3748;
   --vermelho-coral: #C6605E;
   --marrom-madeira: #7A5230;
+  --contorno: #08416E;
+  --verde: #f4efca;
+  --azu: #9d1f15;
+  --cinza: #414141;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #f66435;
     --foreground: #ededed;
     --fundo: #191919;
   }
 }
 
-body {
-  color: var(--background);
-  background: var(--cinza-azulado);
-  font-family: Arial, Helvetica, sans-serif;
+body, html {
+  color: var(--cinza);
+  background: var(--background);
+  font-family: 'Righteous', cursive;
 }
 
 .background-row {
