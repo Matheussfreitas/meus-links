@@ -11,7 +11,7 @@ export default function SessionThree() {
     { name: "gmail", url: "mailto:mgsoutodelira@gmail.com", icon: <FaGoogle /> },
   ]
   return(
-    <Box>
+    <Box sx={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
       <Typography sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "center", color: 'var(--texto)' }}>
         Vamos conectar!
       </Typography>
@@ -19,9 +19,9 @@ export default function SessionThree() {
         display: "flex",
         flexWrap: "row",
         justifyContent: "center",
-        gap: "0.5rem",
+        gap: "0.8rem",
         maxWidth: "300px",
-        marginTop: "10px",
+        // marginTop: "10px",
         marginX: "auto",
         }}>
           {socials.map(item => (

@@ -20,12 +20,12 @@ export default function SessionTwo() {
       maxWidth: "300px",
       borderRadius: "8px",
       }}>
-      <Box sx={{ display: "flex", flexDirection: "column", gap: "10px"}}>
+      <Box sx={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
         <Typography sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "center", color: "var(--texto)"}}>
           Tecnologias
         </Typography>
         <Box sx={{ 
-          marginTop: "10px",
+          // marginTop: "10px",
           display: "flex", 
           flexDirection: "row",  
           justifyContent: "space-around" 

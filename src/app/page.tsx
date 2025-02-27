@@ -16,8 +16,8 @@ export default function Home() {
       justifyContent: 'center',
       alignItems: 'center',
       flexDirection: "column",
-      gap: "1.2rem",
-      paddingY: '10px',
+      gap: "0.8rem",
+      paddingY: "2rem",
     }}>
       <SessionOne />
       <SessionTwo />
