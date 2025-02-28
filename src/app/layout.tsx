@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Righteous } from "next/font/google"
-
-const righteous = Righteous({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-})
+import { GeistMono } from 'geist/font/mono';
 
 export const metadata: Metadata = {
   title: "Links - MatheusDev",
@@ -20,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={righteous.className}>
+      <body className={GeistMono.className}>
         {children}
       </body>
     </html>

@@ -1,4 +1,7 @@
+'use client'
 import { Avatar, Box, Typography } from "@mui/material";
+import DecryptedText from "./decrypted-text/DecryptedText";
+import Image from "next/image";
 
 
 export default function SessionOne() {
@@ -9,7 +12,8 @@ export default function SessionOne() {
       alignItems: 'center',
       borderRadius: "8px",
       width: "380px",
-    }}>
+    }}
+    >
       <Box sx={{
         width: "300px",
         maxWidth: "380px",
@@ -17,31 +21,58 @@ export default function SessionOne() {
         flexDirection: 'column',
         alignItems: "center",
         gap: "0.8rem",
-      }}>
-        <Box sx={{ border: "solid var(--contorno)", borderRadius: "50%" }}>
-          <Avatar variant="circular" 
-          sx={{ 
-            backgroundColor: "var(--background)",
-            width: "90px",
-            height: "90px",
+      }}
+      >
+        <Box sx={{ 
+          position: "relative",
+          borderRadius: "50%",
+          "&::before, &::after": {
+            zIndex: "-1",
+            content: "''",
+            position: "absolute",
+            width: "calc(100% + 6px)",
+            height: "calc(100% + 6px)",
+            background: "linear-gradient(45deg, var(--azu), var(--contorno))",
+            borderRadius: "50%",
+            top: "-2.3%",
+            left: "-2.3%",
+            animation: "rotate 5s linear infinite",
+          },
+        }}
+        >
+          <Avatar variant="circular"
+            sx={{
+              backgroundColor: "var(--background)",
+              width: "120px",
+              height: "120px",
             }}
-            >
-              M
-            </Avatar>
+          >
+            <Image src="/perfil.jpg" alt="code" width={120} height={120} />
+          </Avatar>
         </Box>
+
+
         <Box sx={{
           display: "flex",
           flexDirection: "column",
           textAlign: "center",
-        }}>
+        }}
+        >
           <Typography sx={{ fontWeight: "500", fontSize: "1.1rem", color: 'var(--texto)', textShadow: "0px 0px 1px rgba(0,0,0,0.2)" }}>
-            Desenvolvedor Web
+            <DecryptedText text="Matheus Freitas" speed={110} sequential={true} animateOn="view" />
           </Typography>
           <Typography sx={{ fontWeight: "500", fontSize: "1rem", color: 'var(--texto)' }}>
-            Respirando código e marésia
+            <DecryptedText text="Desenvolvedor Web Full-Stack" speed={120} sequential={true} animateOn="view" />
           </Typography>
         </Box>
       </Box>
+
+      <style jsx>{`
+        @keyframes rotate {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      `}</style>
     </Box>
   )
 }

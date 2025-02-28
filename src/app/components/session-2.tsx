@@ -1,7 +1,6 @@
 import { Box, Icon, Typography } from "@mui/material";
-import Image from "next/image";
-import { SiJavascript, SiTypescript, SiNextdotjs, SiMongodb } from "react-icons/si";
-import { FaJava, FaReact, FaNode } from "react-icons/fa";
+import { FaJava, FaNode, FaReact } from "react-icons/fa";
+import { SiJavascript, SiMongodb, SiNextdotjs, SiTypescript } from "react-icons/si";
 
 export default function SessionTwo() {
   const icons = [

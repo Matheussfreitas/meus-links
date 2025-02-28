@@ -13,6 +13,9 @@
   --verde: #f4efca;
   --azu: #9d1f15;
   --cinza: #414141;
+  --aaa: #d1741f;
+  --bbb: #62829c;
+  --ccc: #223542;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,7 +31,7 @@ body, html {
   background: var(--background);
 
   .MuiTypography-root {
-    font-family: "Righteous", sans-serif;
+    font-family: "GeistMono", sans-serif;
   }
 }
 
