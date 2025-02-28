@@ -32,10 +32,10 @@ export default function SessionOne() {
             position: "absolute",
             width: "calc(100% + 6px)",
             height: "calc(100% + 6px)",
-            background: "linear-gradient(45deg, var(--azu), var(--contorno))",
+            background: "#000",
             borderRadius: "50%",
-            top: "-2.3%",
-            left: "-2.3%",
+            top: "-2.45%",
+            left: "-2.45%",
             animation: "rotate 5s linear infinite",
           },
         }}
