@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import { FaGithub, FaGoogle, FaInstagram, FaLinkedin } from "react-icons/fa";
-
 import Link from "next/link";
 
 export default function SessionThree() {
@@ -21,7 +20,6 @@ export default function SessionThree() {
         justifyContent: "center",
         gap: "0.8rem",
         maxWidth: "300px",
-        // marginTop: "10px",
         marginX: "auto",
         }}>
           {socials.map(item => (
@@ -33,11 +31,11 @@ export default function SessionThree() {
               justifyContent: "center",
               alignItems: "center",
               cursor: "pointer", 
-              padding: "1rem", 
-              border: "solid #1A365D",
+              padding: "0.8rem", 
+              border: "2px solid var(--ccc)",
               borderRadius: "1rem",  
-              "& svg": { fontSize: "35px", color: "var(--contorno)" },
-              "&:hover": { backgroundColor: "var(--contorno)", border: "solid var(--background)", "& svg": {color: "#fff", transition: "0.5s", fontSize: "45px" }, transition: "0.5s" } 
+              "& svg": { fontSize: "1.5rem", color: "var(--ccc)" },
+              "&:hover": { backgroundColor: "var(--ccc)", border: " 2px solid var(--aaa)", transition: "0.5s", "& svg": {color: "#fff", transition: "0.5s", transform: "scale(1.2)" } } 
               }}>
                 {item.icon}
             </Box>

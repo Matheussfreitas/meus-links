@@ -1,33 +1,27 @@
 :root {
-  --foreground: #171717;
-  --cinza-claro: #D0DDD0;
-  --azul-oceano: #5E98A6;
-  --cinza-azulado: #264653;
-  --laranja-suave: #F2762E;
-  --laranja-sol: #E27A3F;
-  --laranja-queimado: #E76F51;
+  --dark: #171717;
+  --light: #D0DDD0;
   --texto: #2D3748;
-  --vermelho-coral: #C6605E;
-  --marrom-madeira: #7A5230;
-  --contorno: #08416E;
-  --verde: #f4efca;
-  --azu: #9d1f15;
-  --cinza: #414141;
   --aaa: #d1741f;
   --bbb: #62829c;
   --ccc: #223542;
+  --azul-oceano: #5E98A6;
+  --cinza-azulado: #264653;
+  --contorno: #08416E;
+  --cinza: #414141;
+  --ddd: #f66435;
+  --laranja-suave: #F2762E;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #f66435;
+    --background: rgba(255, 255, 255, 0.2);
     --foreground: #ededed;
-    --fundo: #191919;
   }
 }
 
 body, html {
-  color: var(--cinza);
+  color: var(--ccc);
   background: var(--background);
 
   .MuiTypography-root {

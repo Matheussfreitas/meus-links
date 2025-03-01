@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import SessionOne from "./components/session-1";
 import SessionTwo from "./components/session-2";
 import SessionThree from "./components/session-3";
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Box sx={{ width: "100%", height: "100vh", backgroundColor: "#000", zIndex: "0", position: "absolute", inset: "0", display: "flex", alignItems: "center" }}>
       <Waves
-        lineColor="var(--aaa)"
+        lineColor="var(--cinza)"
         backgroundColor="rgba(255, 255, 255, 0.2)"
         waveSpeedX={0.02}
         waveSpeedY={0.01}
@@ -26,7 +26,7 @@ export default function Home() {
         position: "relative",
         maxWidth: "400px",
         margin: 'auto',
-        backgroundColor: "var(--verde)",
+        backgroundColor: "var(--light)",
         borderRadius: '1rem',
         display: "flex",
         justifyContent: 'center',

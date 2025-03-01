@@ -32,7 +32,7 @@ export default function SessionOne() {
             position: "absolute",
             width: "calc(100% + 6px)",
             height: "calc(100% + 6px)",
-            background: "#000",
+            background: "linear-gradient(45deg, var(--bbb), var(--aaa))",
             borderRadius: "50%",
             top: "-2.45%",
             left: "-2.45%",
