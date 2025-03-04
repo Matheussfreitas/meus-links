@@ -1,13 +1,10 @@
 'use client'
-import { Avatar, Box, Switch, Typography } from "@mui/material";
+import { Avatar, Box, Typography } from "@mui/material";
 import DecryptedText from "./decrypted-text/DecryptedText";
 import Image from "next/image";
-import { useTheme } from "./theme-context/ThemeContext";
 
 
 export default function SessionOne() {
-  const {darkMode, toggleDarkMode} = useTheme();
-
   return (
     <Box sx={{
       display: "flex",
