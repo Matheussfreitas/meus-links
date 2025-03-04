@@ -54,8 +54,6 @@ export default function SessionOne() {
           </Avatar>
         </Box>
 
-        <Switch checked={darkMode} onChange={toggleDarkMode} size="small" color="default"/>
-
         <Box sx={{
           display: "flex",
           flexDirection: "column",
