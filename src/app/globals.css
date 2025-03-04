@@ -8,10 +8,12 @@
   --azul-oceano: #5E98A6;
   --cinza-azulado: #264653;
   --contorno: #08416E;
-  --cinza: #414141;
+  --cinza: #555555;
+  --cinza-escuro: #3b3b3b;
   --ddd: #f66435;
   --laranja-suave: #F2762E;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -21,11 +23,12 @@
 }
 
 body, html {
-  color: var(--ccc);
+  color: var(--cinza-escuro);
   background: var(--background);
 
   .MuiTypography-root {
     font-family: "GeistMono", sans-serif;
+    color: var(--cinza);
   }
 }
 

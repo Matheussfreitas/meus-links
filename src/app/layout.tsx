@@ -1,22 +1,17 @@
-import type { Metadata } from "next";
+'use client'
 import "./globals.css";
 import { GeistMono } from 'geist/font/mono';
+import { ThemeProviderWrapper } from "./components/theme-context/ThemeContext";
 
-export const metadata: Metadata = {
-  title: "Links - MatheusDev",
-  description: "Links para redes sociais e projetos do MatheusDev",
-};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="pt-br">
-      <body className={GeistMono.className}>
-        {children}
-      </body>
+      <ThemeProviderWrapper>
+        <body className={GeistMono.className}>
+          {children}
+        </body>
+      </ThemeProviderWrapper>
     </html>
   );
 }

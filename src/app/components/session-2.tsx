@@ -20,11 +20,10 @@ export default function SessionTwo() {
       borderRadius: "8px",
       }}>
       <Box sx={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-        <Typography sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "center", color: "var(--texto)"}}>
+        <Typography sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "center",}}>
           Tecnologias
         </Typography>
         <Box sx={{ 
-          // marginTop: "10px",
           display: "flex", 
           flexDirection: "row",  
           justifyContent: "space-around" 
@@ -33,7 +32,9 @@ export default function SessionTwo() {
             <Box key={icon.stack} sx={{ 
               maxWidth: "300px", 
                }}>
-              <Icon sx={{ cursor: "pointer" }}>
+              <Icon sx={{ 
+                cursor: "pointer",
+                "&:hover": { color: "#fff", transform: "scale(1.2)", transition: "0.5s" } }}>
                 {icon.icon}
               </Icon>
             </Box>

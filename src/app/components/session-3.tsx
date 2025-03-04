@@ -11,7 +11,7 @@ export default function SessionThree() {
   ]
   return(
     <Box sx={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-      <Typography sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "center", color: 'var(--texto)' }}>
+      <Typography sx={{ fontSize: "1rem", fontWeight: "500", textAlign: "center" }}>
         Vamos conectar!
       </Typography>
       <Box sx={{ 
@@ -32,9 +32,9 @@ export default function SessionThree() {
               alignItems: "center",
               cursor: "pointer", 
               padding: "0.8rem", 
-              border: "2px solid var(--ccc)",
+              border: "2px solid var(--cinza)",
               borderRadius: "1rem",  
-              "& svg": { fontSize: "1.5rem", color: "var(--ccc)" },
+              "& svg": { fontSize: "1.5rem", color: "var(--cinza)" },
               "&:hover": { backgroundColor: "var(--ccc)", border: " 2px solid var(--aaa)", transition: "0.5s", "& svg": {color: "#fff", transition: "0.5s", transform: "scale(1.2)" } } 
               }}>
                 {item.icon}

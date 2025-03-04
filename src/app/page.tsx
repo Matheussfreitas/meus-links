@@ -1,9 +1,15 @@
+import type { Metadata } from "next";
 import { Box } from "@mui/material";
 import SessionOne from "./components/session-1";
 import SessionTwo from "./components/session-2";
 import SessionThree from "./components/session-3";
 import SessionFour from "./components/session-4";
 import Waves from './components/waves/Waves';
+
+export const metadata: Metadata = {
+  title: "Links - MatheusDev",
+  description: "Links para redes sociais e projetos do MatheusDev",
+};
 
 export default function Home() {
   return (
@@ -26,7 +32,7 @@ export default function Home() {
         position: "relative",
         maxWidth: "400px",
         margin: 'auto',
-        backgroundColor: "var(--light)",
+        backgroundColor: "var(--dark)",
         borderRadius: '1rem',
         display: "flex",
         justifyContent: 'center',

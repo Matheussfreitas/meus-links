@@ -1,10 +1,13 @@
 'use client'
-import { Avatar, Box, Typography } from "@mui/material";
+import { Avatar, Box, Switch, Typography } from "@mui/material";
 import DecryptedText from "./decrypted-text/DecryptedText";
 import Image from "next/image";
+import { useTheme } from "./theme-context/ThemeContext";
 
 
 export default function SessionOne() {
+  const {darkMode, toggleDarkMode} = useTheme();
+
   return (
     <Box sx={{
       display: "flex",
@@ -32,7 +35,7 @@ export default function SessionOne() {
             position: "absolute",
             width: "calc(100% + 6px)",
             height: "calc(100% + 6px)",
-            background: "linear-gradient(45deg, var(--bbb), var(--aaa))",
+            background: "linear-gradient(45deg, var(--cinza), var(--aaa), var(--cinza))",
             borderRadius: "50%",
             top: "-2.45%",
             left: "-2.45%",
@@ -51,6 +54,7 @@ export default function SessionOne() {
           </Avatar>
         </Box>
 
+        <Switch checked={darkMode} onChange={toggleDarkMode} size="small" color="default"/>
 
         <Box sx={{
           display: "flex",
@@ -58,7 +62,7 @@ export default function SessionOne() {
           textAlign: "center",
         }}
         >
-          <Typography sx={{ fontWeight: "500", fontSize: "1.1rem", color: 'var(--texto)', textShadow: "0px 0px 1px rgba(0,0,0,0.2)" }}>
+          <Typography sx={{ fontWeight: "500", fontSize: "1.1rem", textShadow: "0px 0px 1px rgba(0,0,0,0.2)" }}>
             <DecryptedText text="Matheus Freitas" speed={110} sequential={true} animateOn="view" />
           </Typography>
           <Typography sx={{ fontWeight: "500", fontSize: "1rem", color: 'var(--texto)' }}>
