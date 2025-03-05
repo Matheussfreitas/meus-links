@@ -5,13 +5,9 @@
   --aaa: #d1741f;
   --bbb: #62829c;
   --ccc: #223542;
-  --azul-oceano: #5E98A6;
-  --cinza-azulado: #264653;
-  --contorno: #08416E;
-  --cinza: #555555;
   --cinza-escuro: #3b3b3b;
-  --ddd: #f66435;
-  --laranja-suave: #F2762E;
+  --platina: #bfc0be;
+  --cinza: #555555;
 }
 
 
@@ -28,7 +24,7 @@ body, html {
 
   .MuiTypography-root {
     font-family: "GeistMono", sans-serif;
-    color: var(--cinza);
+    color: var(--platina);
   }
 }
 
