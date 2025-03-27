@@ -1,6 +1,6 @@
 import { Box, Icon, Typography } from "@mui/material";
 import { FaJava, FaNode, FaReact } from "react-icons/fa";
-import { SiJavascript, SiMongodb, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { SiJavascript, SiMongodb, SiNextdotjs, SiTypescript, SiPostgresql } from "react-icons/si";
 
 export default function SessionTwo() {
   const icons = [
@@ -10,6 +10,7 @@ export default function SessionTwo() {
     { stack: "NextJS", icon: <SiNextdotjs /> },
     { stack: "NodeJS", icon: <FaNode /> },
     { stack: "Java", icon: <FaJava /> },
+    { stack: "Postgres", icon: <SiPostgresql /> },
     { stack: "MongoDB", icon: <SiMongodb /> },
 
   ];

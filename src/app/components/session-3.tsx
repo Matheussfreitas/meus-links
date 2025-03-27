@@ -35,7 +35,7 @@ export default function SessionThree() {
               border: "2px solid var(--cinza)",
               borderRadius: "1rem",  
               "& svg": { fontSize: "1.5rem", color: "var(--cinza)" },
-              "&:hover": { backgroundColor: "var(--ccc)", border: " 2px solid var(--aaa)", transition: "0.5s", "& svg": {color: "#fff", transition: "0.5s", transform: "scale(1.2)" } } 
+              "&:hover": { backgroundColor: "var(--cinza)", border: " 2px solid var(--aaa)", transition: "0.5s", "& svg": {color: "#fff", transition: "0.5s", transform: "scale(1.2)" } } 
               }}>
                 {item.icon}
             </Box>
