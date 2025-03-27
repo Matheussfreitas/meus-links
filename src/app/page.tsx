@@ -6,11 +6,6 @@ import SessionThree from "./components/session-3";
 import SessionFour from "./components/session-4";
 import Waves from './components/waves/Waves';
 
-export const metadata: Metadata = {
-  title: "Links - MatheusDev",
-  description: "Links para redes sociais e projetos do MatheusDev",
-};
-
 export default function Home() {
   return (
     <Box sx={{ width: "100%", height: "100vh", backgroundColor: "#000", zIndex: "0", position: "absolute", inset: "0", display: "flex", alignItems: "center" }}>
