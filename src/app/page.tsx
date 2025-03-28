@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Box } from "@mui/material";
 import SessionOne from "./components/session-1";
 import SessionTwo from "./components/session-2";
